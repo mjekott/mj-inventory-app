@@ -4,12 +4,10 @@ import { useAuth } from '@/contexts/AuthContext';
 import {
   LayoutDashboard,
   Package,
-  ArrowDownToLine,
-  ArrowUpFromLine,
+  FolderOpen,
   ShoppingCart,
   Settings,
   History,
-  AlertTriangle,
   LogOut,
   ChevronLeft,
   ChevronRight,
@@ -24,10 +22,8 @@ import { Badge } from '@/components/ui/badge';
 const navigation = [
   { name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard, roles: ['super_admin', 'admin', 'manager', 'staff'] },
   { name: 'Inventory', href: '/inventory', icon: Package, roles: ['super_admin', 'admin', 'manager', 'staff'] },
-  { name: 'Stock Inward', href: '/stock-inward', icon: ArrowDownToLine, roles: ['super_admin', 'admin', 'manager'] },
-  { name: 'Stock Outward', href: '/stock-outward', icon: ArrowUpFromLine, roles: ['super_admin', 'admin', 'manager'] },
+  { name: 'Categories', href: '/categories', icon: FolderOpen, roles: ['super_admin', 'admin', 'manager'] },
   { name: 'Orders', href: '/orders', icon: ShoppingCart, roles: ['super_admin', 'admin', 'manager', 'staff'] },
-  { name: 'Low Stock Alerts', href: '/alerts', icon: AlertTriangle, roles: ['super_admin', 'admin', 'manager'] },
   { name: 'Audit History', href: '/audit', icon: History, roles: ['super_admin', 'admin'] },
   { name: 'User Management', href: '/users', icon: Users, roles: ['super_admin', 'admin'] },
   { name: 'Roles & Permissions', href: '/roles', icon: Shield, roles: ['super_admin', 'admin'] },
@@ -107,11 +103,6 @@ export function Sidebar() {
               <item.icon className="w-5 h-5 flex-shrink-0" />
               {!collapsed && (
                 <span className="font-medium text-sm">{item.name}</span>
-              )}
-              {item.name === 'Low Stock Alerts' && !collapsed && (
-                <Badge variant="destructive" className="ml-auto text-xs px-1.5 py-0">
-                  3
-                </Badge>
               )}
             </Link>
           );
