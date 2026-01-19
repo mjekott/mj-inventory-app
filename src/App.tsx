@@ -7,10 +7,8 @@ import { AuthProvider } from "@/contexts/AuthContext";
 import Index from "./pages/Index";
 import Dashboard from "./pages/Dashboard";
 import Inventory from "./pages/Inventory";
-import StockInward from "./pages/StockInward";
-import StockOutward from "./pages/StockOutward";
+import Categories from "./pages/Categories";
 import Orders from "./pages/Orders";
-import LowStockAlerts from "./pages/LowStockAlerts";
 import AuditHistory from "./pages/AuditHistory";
 import Settings from "./pages/Settings";
 import UserManagement from "./pages/UserManagement";
@@ -30,10 +28,8 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/inventory" element={<Inventory />} />
-            <Route path="/stock-inward" element={<StockInward />} />
-            <Route path="/stock-outward" element={<StockOutward />} />
+            <Route path="/categories" element={<Categories />} />
             <Route path="/orders" element={<Orders />} />
-            <Route path="/alerts" element={<LowStockAlerts />} />
             <Route path="/audit" element={<AuditHistory />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="/users" element={<UserManagement />} />
