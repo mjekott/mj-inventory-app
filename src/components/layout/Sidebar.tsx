@@ -13,6 +13,7 @@ import {
   ChevronRight,
   Users,
   Shield,
+  UserCircle,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
@@ -24,6 +25,7 @@ const navigation = [
   { name: 'Inventory', href: '/inventory', icon: Package, roles: ['super_admin', 'admin', 'manager', 'staff'] },
   { name: 'Categories', href: '/categories', icon: FolderOpen, roles: ['super_admin', 'admin', 'manager'] },
   { name: 'Orders', href: '/orders', icon: ShoppingCart, roles: ['super_admin', 'admin', 'manager', 'staff'] },
+  { name: 'Customers', href: '/customers', icon: UserCircle, roles: ['super_admin', 'admin', 'manager'] },
   { name: 'Audit History', href: '/audit', icon: History, roles: ['super_admin', 'admin'] },
   { name: 'User Management', href: '/users', icon: Users, roles: ['super_admin', 'admin'] },
   { name: 'Roles & Permissions', href: '/roles', icon: Shield, roles: ['super_admin', 'admin'] },
