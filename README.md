@@ -1,6 +1,10 @@
-# InventoryPro - Inventory & Order Management System
+# Vendiax - All-in-One Business Management Platform
 
-A comprehensive inventory and order management system with role-based access control, stock tracking, and receipt printing.
+Run your business. One platform. Everything connected.
+
+Vendiax is an all-in-one business management platform built to help modern businesses sell, manage, and grow—all from a single dashboard. From sales and inventory to customers, staff, analytics, events, and operations.
+
+Whether you run a retail store, restaurant, event business, or have businesses in multiple locations—Vendiax gives you real-time insights, streamlined operations, and tools designed to scale with you.
 
 ## Demo Accounts
 
