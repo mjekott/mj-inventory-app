@@ -10,6 +10,7 @@ import Inventory from "./pages/Inventory";
 import Categories from "./pages/Categories";
 import Orders from "./pages/Orders";
 import Customers from "./pages/Customers";
+import Events from "./pages/Events";
 import AuditHistory from "./pages/AuditHistory";
 import Settings from "./pages/Settings";
 import UserManagement from "./pages/UserManagement";
@@ -32,6 +33,7 @@ const App = () => (
             <Route path="/categories" element={<Categories />} />
             <Route path="/orders" element={<Orders />} />
             <Route path="/customers" element={<Customers />} />
+            <Route path="/events" element={<Events />} />
             <Route path="/audit" element={<AuditHistory />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="/users" element={<UserManagement />} />

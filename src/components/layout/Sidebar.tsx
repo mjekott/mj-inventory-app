@@ -15,6 +15,7 @@ import {
   Shield,
   UserCircle,
   Zap,
+  CalendarDays,
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useState } from 'react';
@@ -27,6 +28,7 @@ const navigation = [
   { name: 'Categories', href: '/categories', icon: FolderOpen, roles: ['super_admin', 'admin', 'manager'] },
   { name: 'Orders', href: '/orders', icon: ShoppingCart, roles: ['super_admin', 'admin', 'manager', 'staff'] },
   { name: 'Customers', href: '/customers', icon: UserCircle, roles: ['super_admin', 'admin', 'manager'] },
+  { name: 'Events', href: '/events', icon: CalendarDays, roles: ['super_admin', 'admin', 'manager'] },
   { name: 'Audit History', href: '/audit', icon: History, roles: ['super_admin', 'admin'] },
   { name: 'User Management', href: '/users', icon: Users, roles: ['super_admin', 'admin'] },
   { name: 'Roles & Permissions', href: '/roles', icon: Shield, roles: ['super_admin', 'admin'] },
