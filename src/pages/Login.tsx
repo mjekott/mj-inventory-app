@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Package, Loader2, Mail, Lock, AlertCircle } from 'lucide-react';
+import { Loader2, Mail, Lock, AlertCircle, Zap } from 'lucide-react';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 
 export default function Login() {
@@ -42,13 +42,13 @@ export default function Login() {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-muted p-4">
       <div className="w-full max-w-md animate-fade-in">
         {/* Logo */}
-        <div className="flex items-center justify-center gap-3 mb-8">
-          <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center shadow-lg">
-            <Package className="w-7 h-7 text-primary-foreground" />
+        <div className="flex flex-col items-center justify-center gap-3 mb-8">
+          <div className="w-14 h-14 rounded-2xl bg-primary flex items-center justify-center shadow-lg">
+            <Zap className="w-8 h-8 text-primary-foreground" />
           </div>
-          <div>
-            <h1 className="text-2xl font-bold text-foreground">InventoryPro</h1>
-            <p className="text-sm text-muted-foreground">Inventory Management System</p>
+          <div className="text-center">
+            <h1 className="text-3xl font-bold text-foreground tracking-tight">Vendiax</h1>
+            <p className="text-sm text-muted-foreground mt-1">Run your business. One platform.</p>
           </div>
         </div>
 
